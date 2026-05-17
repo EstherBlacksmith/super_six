@@ -12,12 +12,12 @@ public class SuperSixApplication {
         rollDice.roll();
         System.out.println( rollDice.getOutcome());
         UserSticks userSticks =  new UserSticks(2);
-        System.out.println( userSticks.getTotalSticks());
+        System.out.println( userSticks.getUserSticks());
         userSticks.addStick();
-        System.out.println( userSticks.getTotalSticks());
+        System.out.println( userSticks.getUserSticks());
         userSticks.restStick();
         userSticks.restStick();
-        System.out.println( userSticks.getTotalSticks());
+        System.out.println( userSticks.getUserSticks());
         System.out.println("________");
         BowlHoleSticks bowlHoleSticks = new BowlHoleSticks();
         bowlHoleSticks.getTotalHoleSticks();

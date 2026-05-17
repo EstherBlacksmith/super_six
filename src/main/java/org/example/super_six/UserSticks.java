@@ -1,12 +1,13 @@
 package org.example.super_six;
+
+import lombok.Getter;
+
+@Getter
 public class UserSticks {
     private int userSticks;
 
     public UserSticks(int i) {
-    }
-
-    public int getTotalSticks() {
-        return userSticks;
+        this.userSticks = i;
     }
 
     public void addStick() {
