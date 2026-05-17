@@ -1,5 +1,8 @@
 package org.example.super_six;
 
+import org.example.super_six.model.BowlHoleSticks;
+import org.example.super_six.model.RollDice;
+import org.example.super_six.model.UserSticks;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

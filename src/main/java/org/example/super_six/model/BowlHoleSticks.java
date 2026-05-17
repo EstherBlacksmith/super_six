@@ -1,4 +1,4 @@
-package org.example.super_six;
+package org.example.super_six.model;
 
 public class BowlHoleSticks {
     int bowlHoleSticks[] = {0,0,0,0,0};
