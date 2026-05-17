@@ -14,15 +14,31 @@ public class GameService {
     public GameService() {
     }
 
-    public void playTurn() {
+    public void initGame(){
         userService.getInitialSticks(7);
+    }
+
+    public boolean hasSticks() {
+        return userService.hasSticks();
+    }
+
+    public int getUserSticks() {
+        return userService.getUserSticks();
+    }
+
+    public void playTurn() {
         int result = diceService.roll();
 
         if (result == 6) {
             userService.restStick();
         } else {
-            userService.restStick();
-            bowlService.addStick(result -1);
+           if( bowlService.areAnStickInTheHole(result -1)){
+               userService.addStick();
+               bowlService.restStick(result -1);
+           }else{
+               userService.restStick();
+               bowlService.addStick(result -1);
+           }
         }
     }
 }

@@ -10,4 +10,8 @@ public class BowlService {
     public void restStick(int hole) {
         bowlHoleSticks[hole]=0;
     }
+
+    public boolean areAnStickInTheHole(int hole) {
+        return bowlHoleSticks[hole] == 1;
+    }
 }
