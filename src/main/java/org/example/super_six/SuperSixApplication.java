@@ -9,6 +9,7 @@ public class SuperSixApplication {
     public static void main(String[] args) {
         SpringApplication.run(SuperSixApplication.class, args);
         RollDice rollDice = new RollDice();
+        rollDice.roll();
         System.out.println( rollDice.getOutcome());
         UserSticks userSticks =  new UserSticks(2);
         System.out.println( userSticks.getTotalSticks());
