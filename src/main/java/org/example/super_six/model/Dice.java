@@ -1,6 +1,6 @@
 package org.example.super_six.model;
 
-public class RollDice {
+public class Dice {
 
     private int outcome;
 

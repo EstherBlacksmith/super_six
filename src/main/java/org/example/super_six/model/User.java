@@ -3,10 +3,10 @@ package org.example.super_six.model;
 import lombok.Getter;
 
 @Getter
-public class UserSticks {
+public class User {
     private int userSticks;
 
-    public UserSticks(int i) {
+    public User(int i) {
         this.userSticks = i;
     }
 
