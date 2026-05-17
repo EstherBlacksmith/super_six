@@ -9,11 +9,5 @@ public class Bowl {
         }
     }
 
-    public void addStick(int hole) {
-        bowlHoleSticks[hole]=1;
-    }
 
-    public void restStick(int hole) {
-        bowlHoleSticks[hole]=0;
-    }
 }
